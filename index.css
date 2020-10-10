@@ -1,0 +1,121 @@
+.land-text p{
+    color: rgb(245, 150, 27);
+    font-size: 30px;
+    text-align: center;
+}
+
+.menu{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    border: none;
+    margin-top: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.head{
+    color: rgb(201, 30, 30);
+    font-size: 50px;
+    text-align: center;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.landText{
+    color: tomato;
+    width: 50%;
+}
+
+
+.order{
+    text-align: center;
+    font-size: large;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    padding: 5%;
+    box-shadow: 2px 2px 5px black;
+}
+input[type=number],input[type=email],input[type=text],select{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    border-radius: 4px;
+} 
+#order-button{
+    width: 10%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    margin-top: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#order-button:hover{
+    background-color: greenyellow;
+
+}
+.delivery{
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 0 auto;
+    background-color:gainsboro;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    color: tomato;
+}
+#yes{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 11px 15px;
+    border: none;
+    margin-top: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px; 
+}
+#no{
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+    padding: 11px 15px;
+    border: none;
+    margin-top: 50px;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.contacts{
+    text-align: center;
+    font-size: large;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    padding: 5%;
+    box-shadow: 2px 2px 5px black;   
+}
+#deliver{
+    width: 10%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    margin-top: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+}

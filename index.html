@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pizza shop</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
 </head>
 <body>
@@ -14,17 +15,16 @@
         </div>
     
         <div class="grid-item land-text">
-            <h1>WELCOME TO THE PIZZA SHOP</h1>
-            <P>We offer quality pizza at best price</P>
-            <p>come and enjoy we even deliver them</p>
-            <button>menu</button>
+            <h1 class="head">WELCOME TO THE <br>PIZZA SHOP</h1>
+            <p>We offer quality pizza at best price <br> we even deliver them</p>
+            <a href="#contacts"><button class="menu">menu</button></a>
         </div>
     </div>
 
 <br><br>
-<divc class="container"> 
-    <div class="order">
-        <form action="" onsubmit="return handlePrice()">
+<div class="container"> 
+    <div id="order" class="order">
+        <form action="" onsubmit="return false" id="allInfo">
             <label >Choose size:</label><br>
             <select id="pizzaSize" >
                 <option value="small">small for 2000 Rwf</option>
@@ -46,26 +46,44 @@
                 <option value="pineapple">pineapple for 1000 Rwf</option>
                 <option value="none">none</option>
             </select><br><br>
+
+            <input type="checkbox" id="mushrooms">
+            <label>mushrooms for 1000Rwf</label><br>
+            <input type="checkbox"  id="onions">
+            <label>onions for 500Rwf</label><br>
+            <input type="checkbox" id="pineapple">
+            <label>pineapple for 1000Rwf</label><br><br><br>
     
             <label>number of pizza:</label><br>
         
             <input type="number" id="numOfPizza" value="0">
-            <input type="submit" value="order">
-    
-    
+            <button onclick="runCode()" id="order-button"> order</button>
+
         </form>
+
+
+
     </div>  
+    <div class="delivery" id="delivery">
+        <h3>Would you like to get it delivered?</h3>
+        <button id="yes" onclick="getDelivery()">Yes</button>
+        <button id="no">No</button>
+</div>
 
 </div>
 
-<h4>Contacts</h4>
-<form >
-    <label >First name</label><br>
-    <input type="text" ><br>
-    <label >Phone number</label><br>
-    <input type="text" placeholder="078..."><br>
-    <label >Location</label><br>
-    <input type="text">
-</form>
+<div class="contacts" id="contacts">
+    <h3>Enter your Contact details</h3>
+    <form >
+        <label >Name</label><br>
+        <input type="text" ><br>
+        <label >Phone number</label><br>
+        <input type="text" placeholder="078..."><br>
+        <label >Location</label><br>
+        <input type="text">
+        <button id="deliver" onclick="generateMessage()">Deliver</button>
+    </form>
+</div>
+
 </body>
 </html>
