@@ -62,7 +62,7 @@ function runCode(){
                 price += 500;
             }
 
-            if (document.getElementById("pineapples").checked) {
+            if (document.getElementById("pineapple").checked) {
                 price += 1000;
             }
             alert(price);
