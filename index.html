@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pizza shop</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <h1>WELCOME</h1>
-    <P>We offer quality pizza at best price</P>
-    <p>come and enjoy we even deliver them</p>
-    <button>menu</button><br><br>
-
-<div class="order">
-    <form action="">
-        <label >Choose size:</label>
-        <select name="size" >
-            <option value="small">small for 2000 Rwf</option>
-            <option value="medium">medium for 3000 Rwf</option>
-            <option value="large">large for 5000 Rwf</option>
-        </select> <br><br>
-
-        <label >Choose the kind of crust:</label>
-        <select name="kind of crust:" >
-            <option value="crispy">crispy for 1000 Rwf></option>
-            <option value="stuffed">stuffed for 1500 Rwf</option>
-            <option value="gluten-free">gluten-free for 2000 Rwf</option>
-            <option value="none">none</option>
-        </select><br><br>
-        <label>pizza toppings:</label>
-        <select name="pizza toppings" >
-            <option value="mushrooms">mushrooms for 1000 Rwf></option>
-            <option value="onions">onions for 500 Rwf</option>
-            <option value="pineapple">pineapple for 1000 Rwf</option>
-            <option value="none">none</option>
-        </select><br><br>
-
-        <label>number of pizza:</label>
+    <div class="grid-container">
+        <div class="grid-item land-img">
+            <img src="images/pizza image.jpg" alt="the image of pizza" style="width: 600px;">
+        </div>
     
-        <input type="number" value="number">
-        <input type="submit" value="order">
+        <div class="grid-item land-text">
+            <h1>WELCOME TO THE PIZZA SHOP</h1>
+            <P>We offer quality pizza at best price</P>
+            <p>come and enjoy we even deliver them</p>
+            <button>menu</button>
+        </div>
+    </div>
 
-
-    </form>
-</div>  
 <br><br>
+<divc class="container"> 
+    <div class="order">
+        <form action="" onsubmit="return handlePrice()">
+            <label >Choose size:</label><br>
+            <select id="pizzaSize" >
+                <option value="small">small for 2000 Rwf</option>
+                <option value="medium">medium for 3000 Rwf</option>
+                <option value="large">large for 5000 Rwf</option>
+            </select> <br><br>
+    
+            <label >Choose the kind of crust:</label><br>
+            <select id="crustKind">
+                <option value="crispy">crispy for 1000 Rwf</option>
+                <option value="stuffed">stuffed for 1500 Rwf</option>
+                <option value="glutenFree">gluten-free for 2000 Rwf</option>
+                <option value="none">none</option>
+            </select><br><br>
+            <label>pizza toppings:</label><br>
+            <select id="toppings" >
+                <option value="mushrooms">mushrooms for 1000 Rwf</option>
+                <option value="onions">onions for 500 Rwf</option>
+                <option value="pineapple">pineapple for 1000 Rwf</option>
+                <option value="none">none</option>
+            </select><br><br>
+    
+            <label>number of pizza:</label><br>
+        
+            <input type="number" id="numOfPizza" value="0">
+            <input type="submit" value="order">
+    
+    
+        </form>
+    </div>  
 
+</div>
+
+<h4>Contacts</h4>
 <form >
-    <label>contacts:</label>
-    <input type="first name" value="first name">
-    <input type="second name" value="second name">
-    <input type="phone number" value="phone number">
-    <input type="location" value="locatio">
+    <label >First name</label><br>
+    <input type="text" ><br>
+    <label >Phone number</label><br>
+    <input type="text" placeholder="078..."><br>
+    <label >Location</label><br>
+    <input type="text">
 </form>
 </body>
 </html>
